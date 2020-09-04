@@ -1,0 +1,14 @@
+#social {
+  flex-direction: row;
+}
+
+.logo {
+  color: #384047;
+  font-size: 50px;
+  transition: all 0.5s ease;
+}
+
+.logo:hover {
+  color: #1a24ae;
+  font-size: 70px;
+}
