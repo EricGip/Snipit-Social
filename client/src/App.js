@@ -11,6 +11,8 @@ import { initialState, reducer } from "./store/reducer";
 // NEW Refactored Profilepage branch to React
 import Profile from './components/Profile';
 
+import FeedView from './pages/FeedView';
+
 // Timeline stuff, coming soon
 import listPost from "./components/posts/ListPost";
 
@@ -42,6 +44,8 @@ const App = () => {
 
             {/* Soon */}
             {/* <Route path="/googlelogin" exact component={GoogleLogin} /> */}
+
+            <Route path="/feed" exact component={FeedView} />
 
             {/* NEW Profile Page */}
             <Route path="/profile" exact component={Profile} />

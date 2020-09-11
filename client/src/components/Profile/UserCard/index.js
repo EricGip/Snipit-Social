@@ -19,7 +19,7 @@ const UserCard = () => {
 
     return (
         <div className="card profCard container" id="profile">
-            <img className="avatar" src={avatar_url} alt="Avatar" />
+            <img className="userAvatar" src={avatar_url} alt="Avatar" />
             <h1>{name}</h1>
             <h3>Programmer | Meditator | Boxer | Surfer | Learner</h3>
 
