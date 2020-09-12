@@ -430,7 +430,6 @@ html {
 
 .responsive-tab li {
   display: inline-block;
-  float: left;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -5815,7 +5814,7 @@ a.text-indigo:focus {
 
   .grid-slider-header,
   .grid-slider-header-link {
-    /* padding-right: 10px !important; */
+    padding-right: 10px !important;
   }
 
 }
@@ -6367,7 +6366,6 @@ ul.dropdown-search-list .list-footer a {
   font-size: 13px;
   text-align: right;
   display: inline-block;
-  float: right;
   margin-bottom: 6px;
 }
 
@@ -6701,7 +6699,7 @@ ul.dropdown-user-menu .menu-divider {
 
 .message-content,
 .chats-container-inner .chats-inbox {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .message-content-inner {
@@ -6824,7 +6822,7 @@ ul.dropdown-user-menu .menu-divider {
 }
 
 .chats-inbox ul li:nth-child(2n) {
-  /* background-color: #fafafa; */
+  background-color: #fafafa;
 }
 
 .chats-inbox ul li:last-child {
@@ -7509,8 +7507,8 @@ ul.dropdown-user-menu .menu-divider {
 }
 
 .header-scrolled {
-  /* box-shadow: 0 1px 0 0 rgba(139, 141, 157, 0.05), 0 -1px 10px 0 rgba(65, 71, 108, 0.15) !important; */
-  /* box-shadow: 0 1px 0 0 rgba(139, 141, 157, 0.05), 10px 1px 7px 0 rgba(65, 71, 108, 0.15) !important; */
+  box-shadow: 0 1px 0 0 rgba(139, 141, 157, 0.05), 0 -1px 10px 0 rgba(65, 71, 108, 0.15) !important;
+  box-shadow: 0 1px 0 0 rgba(139, 141, 157, 0.05), 10px 1px 7px 0 rgba(65, 71, 108, 0.15) !important;
 }
 
 header .header-btn-traiger {
@@ -7544,6 +7542,7 @@ header .header-btn-traiger {
   position: relative;
   display: block;
   top: 44%;
+  transition: all 0.25s ease-out;
   -webkit-transition: all 0.25s ease-out;
 }
 
@@ -7624,6 +7623,7 @@ header .head_search {
   outline: 0;
   background: #f1f3f4;
   border: 1px solid transparent;
+  border-radius: 8px;
   -webkit-border-radius: 8px;
   min-width: 450px;
   font-size: 15px;
@@ -8487,7 +8487,6 @@ header .opts_icon_link:hover {
 
 .responsive-tab li {
   display: inline-block;
-  float: left;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -9967,7 +9966,7 @@ header .opts_icon_link:hover {
     height: 35px
   }
 
-  .post-new-media-input {}
+  /* .post-new-media-input {} */
 
   .post-new-media-input .uk-input {
     height: 40px;
@@ -10525,7 +10524,7 @@ header .opts_icon_link:hover {
 
 .dropdown-option-nav ul li>:hover {
   background-color: rgba(0, 0, 0, 0.07);
-  pointer: cursor
+  cursor: pointer;
 }
 
 .dropdown-option-nav ul li>i {
@@ -12065,7 +12064,6 @@ ul.course-curriculum-list {
   display: inline-block;
   margin: 0;
   padding: 0;
-  float: left;
   margin-right: 0;
   position: relative;
   line-height: 1;
