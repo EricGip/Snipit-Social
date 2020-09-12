@@ -1,4 +1,4 @@
-// FEEDVIEW PAGE
+// FEEDVIEW PAGE - FeedContainer, filled with FeedCards
 import React from 'react';
 import NavBar from '../../components/NavBar';
 import FeedContainer from '../../components/FeedComps/FeedContainer';
