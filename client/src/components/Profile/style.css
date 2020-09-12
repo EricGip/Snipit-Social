@@ -1,4 +1,8 @@
 /* PROFILE PAGE */
+
+/* This used to look nice, but the framework
+sort of stomped on it. Needs help... */
+
 .profContainer {
     width: 100vw;
     display: flex;
