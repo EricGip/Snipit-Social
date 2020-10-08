@@ -1,8 +1,7 @@
 # Snipit Social
-A place for devs & designers to meet and share.
+A place for devs & designers to meet and share. 
 
-![GitHub language count](https://img.shields.io/github/languages/count/gloriousLoaf/Snipit-Social)
-![GitHub top language](https://img.shields.io/github/languages/top/gloriousLoaf/Snipit-Social)
+## Visit [Snipit Social](https://snipit-social.herokuapp.com/)
 
 ## Table of Contents
 * [Description](#-description)
@@ -17,8 +16,6 @@ A place for devs & designers to meet and share.
 * [Questions](#-questions)
 <p>&nbsp;</p>
 
-#### Get straight to the business? Visit [Snipit Social](https://snipit-social.herokuapp.com/)
-<p>&nbsp;</p>
 
 ## 📝 Description
 Snipit Social is a lightweight social media web app that currently allows users to signup and login with encrypted authentication, create and edit a personal profile, author posts to share in a communal feed, and hop into chatrooms to share disappearing messages in real time. This app is designed as away for developers to connect in ways that widely-used services like GitHub do not offer, and allows for a focused way of collaborating without the all-issues nature of Twitter. No ads, no tracking or targeting, no bots. Future development and features are noted below.
@@ -39,6 +36,21 @@ Users start their experience at our landing page, where they may sign up for a n
 <p>&nbsp;</p>
 <img src="https://github.com/gloriousLoaf/Snipit-Social/blob/main/readme-imgs/snipit-chat.png" alt="Snipit Feed, chat room" height="400">
 <p>&nbsp;</p>
+
+## Contributions:
+
+First, I laid out the general foundation with help from the Express documentation, Create-React-App boilerplate, and MongoDB Atlas. 
+
+My first functionality goal was to manage authentication. I was able to set up a Passport Google oAuth2 strategy with Context hooks on the frontend to authenticate the user, but scrapped it for a Passport JWT strategy that allowed the user to register and sign in to receive a token to verify their authentication.  
+
+Next I focused on the post functionality on both the front end and the backend by creating the Post model that requires the UserID attained by logging in, express routes to Create, Read, and Delete posts from the Mongo database with mongoose, and initially created hooks to make these API calls. 
+
+Our cohort was brand new to React, so as beginners we initially believed that hooks were best for this small project. As we kept building we slowly began having more conflicts with state/hooks that really hindered our progress. To make things simpler, I refactored a lot of our codebase from functional components into class components to take advantage of Redux's power to manage multiple states. I put a lot of extra hours into learning redux when our class only covered hooks, so I made sure to change only what I had to.
+   * David made a great GitHub oAuth connection with Hooks and was still able to get it running with our redux setup!
+
+After setting up redux, I created the profile page and navigation bar functionality to your profile found by your unique Id. The profile page has API calls to gather your own posts that you created, and David's functionality to connect with Github to, currently, save your public github information into MongoDb. We wanted to display that information on your profile page and allow you to edit those descriptions to add more personalization, but had to place that on our stretch goals given the time restraints.
+
+
 
 ## 🔮 Future Development
 * **More Login Methods** Google, Facebook, Twitter etc.
@@ -75,14 +87,9 @@ Some helpful information that helped our development process:
 <p>&nbsp;</p>
 
 ## ❔ Questions?
-  * **David Metcalf**
-  * **GitHub:** [gloriousLoaf](https://github.com/gloriousLoaf)
-  * <hello@metcalf.dev>
+  * **Eric Gip**
+  * **GitHub:** [EricGip](https://github.com/EricGip)
+  * <Ejgip@ucdavis.edu>
   * Or hitup one of the contributors above!
 
-<img src="https://github.com/gloriousLoaf.png" alt="GitHub Profile Pic" width="125" height="125">
 <p>&nbsp;</p>
-
----
-
-##### This markdown was created with [Readme Generator](https://github.com/gloriousLoaf/Readme-Generator)
