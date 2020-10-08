@@ -71,7 +71,7 @@ router.route("/add/").post(
 );
 
 // done with the backend! Use redux or hooks to call the API and update your frontend!
-
+```
 
 ## 🔮 Future Development
 * **More Login Methods** Google, Facebook, Twitter etc.
