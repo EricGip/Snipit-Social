@@ -50,7 +50,9 @@ Our cohort was brand new to React, so as beginners we initially believed that ho
 
 After setting up redux, I created the profile page and navigation bar functionality to your profile found by your unique Id. The profile page has API calls to gather your own posts that you created, and David's functionality to connect with Github to, currently, save your public github information into MongoDb. We wanted to display that information on your profile page and allow you to edit those descriptions to add more personalization, but had to place that on our stretch goals given the time restraints.
 
+These are only some of the highlights, I did most of the backend (database models, express routes, configuration for deployment) and state management infrastructure to allow my teammates to work on their strengths in the front end.
 
+My absolute favorite part of this project was making a fresh pull to a new cool functionality that my teammates made, and being able to add more functionality onto their work to really just create something cool. 
 
 ## 🔮 Future Development
 * **More Login Methods** Google, Facebook, Twitter etc.
