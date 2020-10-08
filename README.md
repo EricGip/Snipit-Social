@@ -52,7 +52,7 @@ After setting up redux, I created the profile page and navigation bar functional
 
 These are only some of the highlights, I did most of the backend (database models, express routes, configuration for deployment) and state management infrastructure to allow my teammates to work on their strengths in the front end.
 
-My absolute favorite part of this project was making a fresh pull to a new cool functionality that my teammates made, and being able to add more functionality onto their work to really just create something cool. 
+My absolute favorite part of this project was making a fresh pull to a new cool functionality that my teammates made, and being able to add more functionality onto their work to really just create something cool. I'm really interested in contributing to an open source project after this. 
 
 ## 🔮 Future Development
 * **More Login Methods** Google, Facebook, Twitter etc.
