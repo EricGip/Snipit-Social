@@ -41,7 +41,7 @@ Users start their experience at our landing page, where they may sign up for a n
 
 First, I laid out the general foundation with help from the Express documentation, Create-React-App boilerplate, and MongoDB Atlas. 
 
-My first functionality goal was to manage authentication. I was able to set up a Passport Google oAuth2 strategy with Context hooks on the frontend to authenticate the user, but scrapped it for a Passport JWT strategy that allowed the user to register and sign in to receive a token to verify their authentication.  
+My first functionality goal was to manage authentication. I was able to set up a Passport Google oAuth2 strategy with Context hooks on the frontend to authenticate the user, but scrapped it for a Passport JWT strategy that allowed the user to register and sign in to receive a token to verify their authentication. I found a cool way to handle login error messages by changing the state depending on the return of the api call (Wrong login/wrong password).
 
 Next I focused on the post functionality on both the front end and the backend by creating the Post model that requires the UserID attained by logging in, express routes to Create, Read, and Delete posts from the Mongo database with mongoose, and initially created hooks to make these API calls. 
 
