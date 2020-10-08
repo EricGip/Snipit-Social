@@ -3,20 +3,6 @@ A place for devs & designers to meet and share.
 
 ## Visit [Snipit Social](https://snipit-social.herokuapp.com/)
 
-## Table of Contents
-* [Description](#-description)
-* [Installation](#-installation)
-* [Usage](#-usage)
-* [Images](#-images)
-* [Future Development](#-future-development)
-* [License](#-license)
-* [Contributors](#-contributors)
-* [Tools](#-tools)
-* [Resources](#-resources)
-* [Questions](#-questions)
-<p>&nbsp;</p>
-
-
 ## 📝 Description
 Snipit Social is a lightweight social media web app that currently allows users to signup and login with encrypted authentication, create and edit a personal profile, author posts to share in a communal feed, and hop into chatrooms to share disappearing messages in real time. This app is designed as away for developers to connect in ways that widely-used services like GitHub do not offer, and allows for a focused way of collaborating without the all-issues nature of Twitter. No ads, no tracking or targeting, no bots. Future development and features are noted below.
 <p>&nbsp;</p>
@@ -53,6 +39,39 @@ After setting up redux, I created the profile page and navigation bar functional
 These are only some of the highlights, I did most of the backend (database models, express routes, configuration for deployment) and state management infrastructure to allow my teammates to work on their strengths in the front end.
 
 My absolute favorite part of this project was making a fresh pull to a new cool functionality that my teammates made, and being able to add more functionality onto their work to really just create something cool. I'm really interested in contributing to an open source project after this. 
+
+## Example: 
+
+Creating a post, starting from the backend you can view the basic express set up in `/server/index.js`. 
+
+```
+// 1. Create a Post model for the database. 
+const Post = require("../models/Post");
+
+// 2. Create an Express Route 
+router.route("/add/").post(
+  passport.authenticate("jwt", { failureRedirect: "/failed" }),
+  (req, res) => {
+    const text = req.body.text.trim();
+    // return res.send("Test ok!")
+
+    const newPost = new Post({
+      user: {
+        id: req.user.id,
+        fullname: req.user.fullname
+      },
+      text
+    });
+
+    newPost
+      .save()
+      .then(post => res.json(post))
+      .catch(err => console.log(err));
+  }
+);
+
+// done with the backend! Use redux or hooks to call the API and update your frontend!
+
 
 ## 🔮 Future Development
 * **More Login Methods** Google, Facebook, Twitter etc.
