@@ -7,12 +7,6 @@ A place for devs & designers to meet and share.
 Snipit Social is a lightweight social media web app that currently allows users to signup and login with encrypted authentication, create and edit a personal profile, author posts to share in a communal feed, and hop into chatrooms to share disappearing messages in real time. This app is designed as away for developers to connect in ways that widely-used services like GitHub do not offer, and allows for a focused way of collaborating without the all-issues nature of Twitter. No ads, no tracking or targeting, no bots. Future development and features are noted below.
 <p>&nbsp;</p>
 
-## 💾 Installation
-This is a **MERN** full stack app. We built this app to store data using **MongoDB Atlas** cloud hosting. Please [see their docs for information](https://docs.atlas.mongodb.com/) regarding setting up a cluster for this app. To start your own instance, clone this repository and run ``` npm install ``` from the root directory. Then ``` cd client ``` and run another install to complete the dependencies.
-* **Local Instance:** To test and develop locally, open a **MongoDB** enabled terminal window, navigate to the root directory and run ``` mongod ``` to start the server listening. Unless altered, all data will hit your cloud database by default. Then in a new terminal, run ``` npm run dev ``` from the root. This script tells npm *Concurrently* to start both servers listening at ports 3000 and 5000 respectively. Launch your browser, navigate to ``` localhost:3000 ``` and begin using Snipit Social!
-* **Web Instance:** Connect your MongoDB cloud cluster to you preferred cloud platform for website hosting. We used **[Heroku](https://devcenter.heroku.com/)** to deploy this app, go here to checkout 👉 **[Snipit Social](https://snipit-social.herokuapp.com/)** in action.
-<p>&nbsp;</p>
-
 ## 📲 Usage
 Users start their experience at our landing page, where they may sign up for a new account or login to their existing account after signing in , users may use the navbar to travel around Snipit Social, making posts on the feed and viewing and updating their profile. They can also view others' profiles, follow or unfollow or hangout in the chatrooms. This app is a mobile-first **PWA** so users can install it on their devices and check in anytime to share new ideas.
 <p>&nbsp;</p>
